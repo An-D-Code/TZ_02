@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ТЗ #2</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <table class="table">
+            <thead class="table__head">
+                <td>
+                    <span class="table__title">Общая статистика</span>
+                </td>
+                <td colspan="2" align="right">
+                    <img src="./images/refresh-page-arrow-button_icon-icons.com_53909.ico" class="table__refresh"></img>
+                    <img src="./images/settings-cogwheel-button_icon-icons.com_72559.ico" class="table__settings"></img>
+                    <img src="./images/ic-cancel_97589.ico" class="table__close"></img>
+                </td>
+            </thead>
+            <tbody class="table__body">
+                <tr>
+                    <th>Показатель</th>
+                    <th>Текущий день</th>
+                    <th>Вчера</th>
+                </tr>
+                <tr class="value">
+                    <td>Выручка, руб</td>
+                </tr>
+                <tr>
+                    <td class="td-chart" colspan="3">
+                        <div style="height: 200px" class="chart" id="chart"></div>
+                    </td>
+                </tr>
+                <tr class="value">
+                    <td>Наличные</td>
+                </tr>
+                <tr class="value">
+                    <td>Безналичный расчет</td>
+                </tr>
+                <tr class="value">
+                    <td>Кредитные карты</td>
+                </tr>
+                <tr class="value">
+                    <td>Средний чек, руб</td>
+                </tr>
+                <tr class="value">
+                    <td>Средний чек, гость</td>
+                </tr>
+                <tr class="value">
+                    <td>Удаления из чека<br>(после оплаты), руб</td>
+                </tr>
+                <tr class="value">
+                    <td>Удаления из счета<br>(до оплаты), руб</td>
+                </tr>
+                <tr class="value">
+                    <td>Количество чеков</td>
+                </tr>
+                <tr class="value">
+                    <td>Количество гостей</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="scripts/chart.js"></script>
+    <script type="module" src="scripts/script.js"></script>   
+</body>
+</html>
